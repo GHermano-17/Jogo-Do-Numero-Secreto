@@ -30,7 +30,8 @@ function verificarChute() {
     console.log(chute == numeroSecreto);
 
     if (chute > numeroLimite || chute < 1 ) {
-        alert("O chute foi fora dos limites estabelecidos.")
+        alert("O chute foi fora dos limites estabelecidos.");
+        limparCampo();
     } else {
         if (chute == numeroSecreto) {
             exibirTextoNaTela("h1",  "PARABÉNS!");
